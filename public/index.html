@@ -8,38 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
     <title>Wander</title>
 </head>
-<body class="bg-[#232B22] w-full">
+<body class="bg-[#232B22] w-full flex justify-center">
     <!-- MAIN WRAPPER -->
     <div class="max-w-[1440px] w-full h-full relative z-10">
         <!-- HEADER -->
-        <header class="px-[60px] pt-[45px] flex">
+        <header id="header" class="mx-[30px] px-[30px] py-[20px] my-[25px] flex w-full max-w-[calc(1440px-60px)] z-50 absolute transition-all duration-500 ease-in-out rounded-3xl bg-">
             <!-- LOGO -->
             <div class="aleo-700 text-2xl text-white">
                 Wander
             </div>
             <!-- Navigation | Links -->
-            <nav class="flex gap-14 ml-auto">
-                <p class="aleo-600 text-2xl text-white">
-                    Home
-                </p>
-                <p class="aleo-600 text-2xl text-white">
-                    Popular
-                </p>
-                <p class="aleo-600 text-2xl text-white">
-                    Blog
-                </p>
-                <p class="aleo-600 text-2xl text-white">
-                    Tips
-                </p>
-                <p class="aleo-600 text-2xl text-white">
-                    Contact
-                </p>
+            <nav class="flex gap-14 ml-auto relative">
+                <a href="#" class="flex flex-col justify-center items-center">
+                    <p class="aleo-600 text-2xl text-white">
+                        Home
+                    </p>
+                    <!-- UNDERLINE -->
+                    <div class="w-[calc(100%-20px)] h-0.5 bg-white"></div>
+                </a>
+                <a href="">
+                    <p class="aleo-600 text-2xl text-white">
+                        Popular
+                    </p>
+                </a>
+                <a href="">
+                    <p class="aleo-600 text-2xl text-white">
+                        Blog
+                    </p>
+                </a>
+                <a href="">
+                    <p class="aleo-600 text-2xl text-white">
+                        Tips
+                    </p>
+                </a>
+                <a href="">
+                    <p class="aleo-600 text-2xl text-white">
+                        Contact
+                    </p>
+                </a>
             </nav>
         </header>
         <!-- HERO -->
-        <div class="flex flex-col ml-[60px] mt-20 gap-[22.5px]">
+        <div class="flex flex-col ml-[60px] mt-32 gap-[22.5px]">
             <label class="aleo-600 text-2xl text-white">
                 Welcome to Wander
             </label>
@@ -81,7 +94,7 @@
             </div>
             <!-- Slider -->
             <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
-                <img src="./pics/mountain1.jpg" alt="mountains-pics">
+                <img src="./pics/home-page/sliders/slider-1/mountains-1.jpg" alt="mountains-pics">
                 <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
@@ -99,7 +112,7 @@
         <section class="mt-24 mx-44 flex justify-between">
             <!-- Slider -->
             <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
-                <img src="./pics/mountain1.jpg" alt="mountains-pics">
+                <img src="./pics/home-page/sliders/slider-2/islands-1.jpg" alt="mountains-pics">
                 <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
@@ -133,7 +146,7 @@
             </div>
         </section>
         <!-- SECTION 3 -->
-        <section class="mt-48 mx-44 flex justify-between">
+        <section class="mt-20 py-20 px-44 flex justify-between items-center relative overflow-hidden ">
             <!-- TEXT -->
             <div class="flex flex-col gap-9 text-left max-w-[460px]">
                 <!-- TITLE -->
@@ -155,7 +168,7 @@
             </div>
             <!-- Slider -->
             <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
-                <img src="./pics/mountain1.jpg" alt="mountains-pics">
+                <img src="./pics/home-page/sliders/slider-3/waterfalls-1.jpg" alt="mountains-pics">
                 <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
@@ -168,9 +181,12 @@
                 </div>
                 
             </div>
+            <!-- BACKGROUND -->
+            <div class="overflow-hidden absolute left-0 right-0 top-0 -z-10 aspect-[144/56] bg-top bg-no-repeat bg-cover blur-sm" style=" background-image: url(./pics/home-page/home-bg-2.png)">
+            </div>
         </section>
         <!-- FOOTER -->
-        <footer class="w-full h-[150px] flex px-[60px] overflow-hidden mt-20 relative">
+        <footer class="w-full h-[150px] flex px-[60px] overflow-hidden relative">
             <!-- LOGO -->
             <div class="flex gap-6 text-white text-2xl aleo-400 justify-center items-center relative bottom-4">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,9 +250,10 @@
                 </svg>
             </div>
         </footer>
+        <!-- BACKGROUND HERO -->
+        <div class="overflow-hidden absolute left-0 right-0 top-0 -z-10 aspect-[144/100] bg-top bg-cover" style=" background-image: url(./pics/home-page/home-bg.webp)">
+        </div>
     </div>
-    <!-- BACKGROUND -->
-    <div class="overflow-hidden absolute left-0 right-0 top-0 -z-10 aspect-[144/107] bg-top bg-cover" style=" background-image: url(./pics/home-bg.webp)">
-    </div>
+    
 </body>
 </html>
