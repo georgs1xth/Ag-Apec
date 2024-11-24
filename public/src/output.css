@@ -616,3 +616,38 @@ video {
   font-weight: 900;
   font-style: normal;
 }
+
+
+.slider-popular .slider-1 
+{
+  position: absolute;
+  aspect-ratio: 22/27;
+  width: 37%;
+  left: 0;
+  bottom: 0;
+  border: 1px white solid;
+  border-radius: 6px;
+}
+
+.slider-popular .slider-2
+{
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 46%;
+  left: 50;
+  top: 0;
+  z-index: 10;
+  border: 1px #536950 solid;
+  border-radius: 6px;
+}
+
+.slider-popular .slider-3 
+{
+  position: absolute;
+  aspect-ratio: 22/27;
+  width: 37%;
+  right: 0;
+  bottom: 0;
+  border: 1px white solid;
+  border-radius: 6px;
+}
