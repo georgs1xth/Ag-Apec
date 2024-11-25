@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
     console.log("work", window.scrollY);
 })
 
-// Prevent default behavior of a links (smooth scrolling)
+// Prevent default behavior of anchor links (smooth scrolling)
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
