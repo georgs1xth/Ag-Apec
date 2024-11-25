@@ -627,6 +627,7 @@ video {
   bottom: 0;
   border: 1px white solid;
   border-radius: 6px;
+  background-color: white;
 }
 
 .slider-popular .slider-2
@@ -639,6 +640,7 @@ video {
   z-index: 10;
   border: 1px #536950 solid;
   border-radius: 6px;
+  background-color: red;
 }
 
 .slider-popular .slider-3 
@@ -650,4 +652,5 @@ video {
   bottom: 0;
   border: 1px white solid;
   border-radius: 6px;
+  background-color: black;
 }
