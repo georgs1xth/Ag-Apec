@@ -242,9 +242,9 @@
             <!-- SLIDER -->
             <div class="relative justify-center items-center z-20 w-[calc((100%)/8*5)] aspect-[76/35] mt-12 slider-popular">
                 <div class="mx-20 w-[calc(100%-160px)] h-full flex justify-center items-center relative">
-                    <img class="absolute overflow-hidden  slider-1" src="" alt="paris-1">
-                    <img class="absolute overflow-hidden  slider-2" src="" alt="paris-2">
-                    <img class="absolute overflow-hidden  slider-3" src="" alt="paris-3">
+                    <img class="absolute overflow-hidden slider-1" src="" alt="paris-1">
+                    <img class="absolute overflow-hidden slider-2" src="" alt="paris-2">
+                    <img class="absolute overflow-hidden slider-3" src="" alt="paris-3">
                 </div>
                 <svg class="absolute top-[53%] left-0 prev-slide" width="57" height="49" viewBox="0 0 57 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M56.75 24.5C56.75 37.8588 44.1389 48.75 28.5 48.75C12.8611 48.75 0.25 37.8588 0.25 24.5C0.25 11.1412 12.8611 0.25 28.5 0.25C44.1389 0.25 56.75 11.1412 56.75 24.5Z" stroke="white" stroke-width="0.5"/>
@@ -426,9 +426,9 @@
             <!-- SLIDER -->
             <div class="relative justify-center items-center z-20 w-[calc((100%)/8*5)] aspect-[76/35] mt-12 slider-popular">
                 <div class="mx-20 w-[calc(100%-160px)] h-full flex justify-center items-center relative">
-                    <img class="absolute overflow-hidden  slider-1" src=""  alt="agra-1">
-                    <img class="absolute overflow-hidden  slider-2" src="" alt="agra-2">
-                    <img class="absolute overflow-hidden  slider-3" src="" alt="agra-3">
+                    <img class="absolute overflow-hidden slider-1" src=""  alt="agra-1">
+                    <img class="absolute overflow-hidden slider-2" src="" alt="agra-2">
+                    <img class="absolute overflow-hidden slider-3" src="" alt="agra-3">
                 </div>
                 <svg class="absolute top-[53%] left-0 prev-slide" width="57" height="49" viewBox="0 0 57 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M56.75 24.5C56.75 37.8588 44.1389 48.75 28.5 48.75C12.8611 48.75 0.25 37.8588 0.25 24.5C0.25 11.1412 12.8611 0.25 28.5 0.25C44.1389 0.25 56.75 11.1412 56.75 24.5Z" stroke="white" stroke-width="0.5"/>
@@ -541,7 +541,7 @@
 
                 const updateSlides = () => {
                 slides.forEach((slide, index) => {
-                    slide.className = `absolute overflow-hidden slider-${
+                    slide.className = `transition-all duration-300 absolute overflow-hidden slider-${
                     (index - currentIndex + slides.length) % slides.length + 1
                     }`;
                 });

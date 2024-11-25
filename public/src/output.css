@@ -651,3 +651,8 @@ video {
   border: 1px white solid;
   border-radius: 6px;
 }
+
+.next-slide,
+.prev-slide{
+  cursor: pointer;
+}
