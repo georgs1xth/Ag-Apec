@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="./main.js" defer></script>
+    <script src="./index.js" defer></script>
     <title>Wander</title>
 </head>
 <body class="bg-[#232B22] w-full flex justify-center">
@@ -93,14 +94,14 @@
                 </p>
             </div>
             <!-- Slider -->
-            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
+            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl slider-main">
                 <img src="./pics/home-page/sliders/slider-1/mountains-1.jpg" alt="mountains-pics">
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+                <div class="prev-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
                     </svg>                        
                 </div>
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+                <div class="next-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.157 12.711L4.5 18.368L3.086 16.954L8.036 12.004L3.086 7.05401L4.5 5.64001L10.157 11.297C10.3445 11.4845 10.4498 11.7389 10.4498 12.004C10.4498 12.2692 10.3445 12.5235 10.157 12.711Z" fill="white"/>
                     </svg>     
@@ -111,14 +112,14 @@
         <!-- SECTION 2 -->
         <section class="mt-24 mx-44 flex justify-between">
             <!-- Slider -->
-            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
+            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl slider-main">
                 <img src="./pics/home-page/sliders/slider-2/islands-1.jpg" alt="mountains-pics">
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+                <div class="prev-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
                     </svg>                        
                 </div>
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+                <div class="next-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.157 12.711L4.5 18.368L3.086 16.954L8.036 12.004L3.086 7.05401L4.5 5.64001L10.157 11.297C10.3445 11.4845 10.4498 11.7389 10.4498 12.004C10.4498 12.2692 10.3445 12.5235 10.157 12.711Z" fill="white"/>
                     </svg>     
@@ -167,14 +168,15 @@
                 </p>
             </div>
             <!-- Slider -->
-            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl">
-                <img src="./pics/home-page/sliders/slider-3/waterfalls-1.jpg" alt="mountains-pics">
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+            <div class="aspect-[340/385] w-[340px] overflow-hidden relative shadow-2xl slider-main">
+                <img class="slide-active" src="./pics/home-page/sliders/slider-3/waterfalls-1.jpg" alt="mountains-pics">
+
+                <div class="prev-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute left-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.843 11.289L7.5 5.63198L8.914 7.04598L3.964 11.996L8.914 16.946L7.5 18.36L1.843 12.703C1.65553 12.5155 1.55022 12.2611 1.55022 11.996C1.55022 11.7308 1.65553 11.4765 1.843 11.289Z" fill="white"/>
                     </svg>                        
                 </div>
-                <div class="rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
+                <div class="next-slide rounded-full aspect-square w-9 h-9 bg-[#D9D9D9]/50 flex justify-center items-center absolute right-4 top-[calc((385px-18px)/2)] backdrop-blur-md shadow-xl">
                     <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.157 12.711L4.5 18.368L3.086 16.954L8.036 12.004L3.086 7.05401L4.5 5.64001L10.157 11.297C10.3445 11.4845 10.4498 11.7389 10.4498 12.004C10.4498 12.2692 10.3445 12.5235 10.157 12.711Z" fill="white"/>
                     </svg>     
@@ -255,5 +257,7 @@
         </div>
     </div>
     
+
+
 </body>
 </html>
