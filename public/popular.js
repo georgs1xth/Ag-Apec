@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const updateSlides = () => {
             slides.forEach((slide, index) => {
-                slide.className = `transition-all duration-300 absolute overflow-hidden slider-${
+                slide.className = `transition-all duration-700 absolute overflow-hidden object-cover slider-${
                 (index - currentIndex + slides.length) % slides.length + 1
                 }`;
             });

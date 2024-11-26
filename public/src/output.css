@@ -617,6 +617,16 @@ video {
   font-style: normal;
 }
 
+.slider-popular img
+{
+  background-position: top center;
+  object-position: center top;
+}
+
+.slider-popular
+{
+  user-select: none;  
+}
 
 .slider-popular .slider-1 
 {
@@ -627,6 +637,7 @@ video {
   bottom: 0;
   border: 1px white solid;
   border-radius: 6px;
+  user-select: none;
 }
 
 .slider-popular .slider-2
@@ -634,11 +645,12 @@ video {
   position: absolute;
   aspect-ratio: 1/1;
   width: 46%;
-  left: 50;
-  top: 0;
+  left: 27%;
+  bottom: 20%;
   z-index: 10;
   border: 1px #536950 solid;
   border-radius: 6px;
+  user-select: none;
 }
 
 .slider-popular .slider-3 
@@ -646,10 +658,11 @@ video {
   position: absolute;
   aspect-ratio: 22/27;
   width: 37%;
-  right: 0;
+  left: 63%;
   bottom: 0;
   border: 1px white solid;
   border-radius: 6px;
+  user-select: none;
 }
 
 .next-slide,
